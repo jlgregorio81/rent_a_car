@@ -25,5 +25,9 @@ class Client extends Model
         return $this->belongsTo(City::class);
     }
 
+    public function rentals(){
+        return $this->hasMany(Rental::class, 'client_id', 'id');
+    }
+
 
 }
