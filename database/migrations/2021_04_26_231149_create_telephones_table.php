@@ -20,7 +20,7 @@ class CreateTelephonesTable extends Migration
             $table->primary('id');
             //..defines a column as foreign key
             $table->foreign('id')->references('id')->on('clients');
-            $table->string('number', 15);
+            $table->string('number', 30);
             $table->timestamps();
         });
     }
